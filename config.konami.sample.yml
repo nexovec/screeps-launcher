@@ -1,0 +1,46 @@
+steamKey: <YOUR STEAM API KEY>
+mods: # Recommended mods
+- screepsmod-auth
+- screepsmod-admin-utils
+- screepsmod-mongo  # You must install and start `mongodb` and `redis` before this mod will work
+bots:
+  simplebot: screepsbot-zeswarm
+serverConfig:
+  tickRate: 100
+  welcomeText:  |
+    <h1 id="test" style="text-align: center;">Pew pew server!</h1>
+  constants: # Used to override screeps constants
+    # konami configuration, scale everything by a factor 10
+    CONSTRUCTION_COST:
+      spawn: 1500
+      extension: 300
+      road: 30
+      constructedWall: 1
+      rampart: 1
+      link: 500
+      storage: 3000
+      tower: 500
+      observer: 800
+      powerSpawn: 10000
+      extractor: 500
+      lab: 5000
+      terminal: 10000
+      container: 500
+      nuker: 10000
+    #BODYPART_COST:
+    #  move: 5
+    #  work: 10
+    #  attack: 8
+    #  carry: 5
+    #  heal: 25
+    #  ranged_attack: 15
+    #  tough: 1
+    #  claim: 60
+    UPGRADE_CONTROLLER_POWER: 100
+    CONTROLLER_LEVELS: [0, 200, 4500, 13500, 40500, 121500, 364500, 1093500]
+    GCL_MULTIPLY: 100000
+    MINERAL_REGEN_TIME: 5000
+    SAFE_MODE_DURATION: 2000,
+    SAFE_MODE_COOLDOWN: 5000,
+    #CREEP_SPAWN_TIME: 0.3,
+    SPAWN_RENEW_RATIO: 1.2,
